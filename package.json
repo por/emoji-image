@@ -1,21 +1,25 @@
 {
-  "name": "react-native-apple-emoji",
+  "name": "emoji-to-data-uri",
   "version": "0.1.0",
-  "description": "Use Apple-style emoji’s cross-platform by falling back on static images.",
-  "main": "dist/index.js",
+  "description": "A collection of base64 data-uri versions of Apple emojis.",
+  "main": "index.js",
   "scripts": {
-    "build": "node build.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node ./scripts/build.js",
+    "test": "jest",
+    "test:watch": "jest --watch",
     "prepublish": "npm run build"
   },
   "author": "Tim Bormans",
   "license": "MIT",
   "devDependencies": {
     "fontkit": "^1.7.7",
+    "image-data-uri": "^1.0.1",
+    "jest": "^21.2.1",
     "mkdirp": "^0.5.1",
     "rimraf": "^2.6.2"
   },
   "files": [
-    "dist"
+    "index.js",
+    "assets"
   ]
 }
