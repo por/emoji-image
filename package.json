@@ -22,5 +22,8 @@
   },
   "files": [
     "images"
-  ]
+  ],
+  "engines": {
+    "node": ">=7.8.0"
+  }
 }
