@@ -1,22 +1,26 @@
 {
-  "name": "emoji-to-data-uri",
+  "name": "emoji-image",
   "version": "0.1.0",
-  "description": "A collection of base64 data-uri versions of Apple emojis.",
+  "description": "A collection of PNG emoji images based on the Apple emoji font.",
   "main": "index.js",
   "scripts": {
-    "build": "node ./scripts/build.js",
-    "test": "jest",
-    "test:watch": "jest --watch",
-    "postinstall": "npm run build",
+    "build": "node ./index.js",
     "prepublish": "npm run build"
   },
   "author": "Tim Bormans",
   "license": "MIT",
   "dependencies": {
+    "emojilib": "^2.2.9",
     "fontkit": "^1.7.7",
-    "image-data-uri": "^1.0.1",
-    "jest": "^21.2.1",
     "mkdirp": "^0.5.1",
     "rimraf": "^2.6.2"
-  }
+  },
+  "devDependencies": {
+    "eslint": "^4.11.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0"
+  },
+  "files": [
+    "images"
+  ]
 }
