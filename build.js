@@ -1,8 +1,8 @@
 const fs = require('fs');
-const emoji = require('emojilib');
-const fontkit = require('fontkit');
-const mkdirp = require('mkdirp');
-const rimraf = require('rimraf');
+const emoji = require('emojilib'); // eslint-disable-line import/no-extraneous-dependencies
+const fontkit = require('fontkit'); // eslint-disable-line import/no-extraneous-dependencies
+const mkdirp = require('mkdirp'); // eslint-disable-line import/no-extraneous-dependencies
+const rimraf = require('rimraf'); // eslint-disable-line import/no-extraneous-dependencies
 
 const collectionPath = '/System/Library/Fonts/Apple Color Emoji.ttc'; // >= OS X 10.12
 const fontPath = '/System/Library/Fonts/Apple Color Emoji.ttf'; // <= OS X 10.11

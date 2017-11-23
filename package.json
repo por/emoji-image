@@ -2,23 +2,20 @@
   "name": "emoji-image",
   "version": "0.1.0",
   "description": "A collection of PNG emoji images based on the Apple emoji font.",
-  "main": "index.js",
   "scripts": {
-    "build": "node ./index.js",
+    "build": "node build.js",
     "prepublish": "npm run build"
   },
   "author": "Tim Bormans",
   "license": "MIT",
-  "dependencies": {
+  "devDependencies": {
     "emojilib": "^2.2.9",
+    "eslint": "^4.11.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
     "fontkit": "^1.7.7",
     "mkdirp": "^0.5.1",
     "rimraf": "^2.6.2"
-  },
-  "devDependencies": {
-    "eslint": "^4.11.0",
-    "eslint-config-airbnb-base": "^12.1.0",
-    "eslint-plugin-import": "^2.8.0"
   },
   "files": [
     "images"
